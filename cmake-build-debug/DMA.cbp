@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="DMA"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Project/DMA/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DMA.elf">
+				<Option output="D:/Project/DMA/cmake-build-debug/DMA.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Project/DMA/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add option="-DDEBUG"/>
+					<Add directory="D:/Project/DMA/Core/Inc"/>
+					<Add directory="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/Project/DMA/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="D:/Project/DMA/Drivers/CMSIS/Include"/>
+					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1"/>
+					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi"/>
+					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/backward"/>
+					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/include"/>
+					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/include-fixed"/>
+					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 DMA.elf"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DMA.elf/fast">
+				<Option output="D:/Project/DMA/cmake-build-debug/DMA.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Project/DMA/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add option="-DDEBUG"/>
+					<Add directory="D:/Project/DMA/Core/Inc"/>
+					<Add directory="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/Project/DMA/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="D:/Project/DMA/Drivers/CMSIS/Include"/>
+					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1"/>
+					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi"/>
+					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/backward"/>
+					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/include"/>
+					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/include-fixed"/>
+					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 DMA.elf/fast"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Project/DMA/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Project/DMA/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Project/DMA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Project/DMA/Core/Inc/dma.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Inc/gpio.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Inc/main.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Inc/stm32f1xx_hal_conf.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Inc/stm32f1xx_it.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Inc/usart.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Src/dma.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Src/gpio.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Src/main.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Src/stm32f1xx_hal_msp.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Src/stm32f1xx_it.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Src/syscalls.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Src/sysmem.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Src/system_stm32f1xx.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Src/usart.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Core/Startup/startup_stm32f103c8tx.s">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/STM32F103C8TX_FLASH.ld">
+			<Option target="DMA.elf"/>
+		</Unit>
+		<Unit filename="D:/Project/DMA/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
