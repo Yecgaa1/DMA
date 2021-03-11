@@ -22,7 +22,7 @@
 #include "dma.h"
 #include "usart.h"
 #include "gpio.h"
-
+#include "user.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -45,7 +45,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint8_t  rx_buffer[100];
 /* USER CODE END PV */
 
 #pragma clang diagnostic push
@@ -91,21 +91,20 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_USART1_UART_Init();
-    //下方为自己添加的代码、
-    __HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE); //使能IDLE中断
+  __HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE); //使能IDLE中断
 
 //DMA接收函数，此句一定要加，不加接收不到第一次传进来的实数据，是空的，且此时接收到的数据长度为缓存器的数据长度
-    HAL_UART_Receive_DMA(&huart1,rx_buffer,BUFFER_SIZE);
+    HAL_UART_Receive_DMA(&huart1,rx_buffer,100);
   /* USER CODE BEGIN 2 */
     char t[100]="Hello!";
   /* USER CODE END 2 */
-
+    uint8_t Senbuff[] = "\r\n**** Serial Output Message by DMA ***\r\n   UART DMA Test \r\n   Zxiaoxuan";  //定义数据发送数组
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      HAL_UART_Transmit_DMA(&huart1, (uint8_t *)t, sizeof(t));
-      HAL_Delay(100);
+      HAL_UART_Transmit_DMA(&huart1, (uint8_t *)Senbuff, sizeof(Senbuff));
+      HAL_Delay(1000);
 
     /* USER CODE END WHILE */
 

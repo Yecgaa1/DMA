@@ -20,13 +20,13 @@
 #ifndef __DMA_H__
 #define __DMA_H__
 
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
 /* DMA memory to memory transfer handles -------------------------------------*/
 
 /* USER CODE BEGIN Includes */
@@ -35,6 +35,7 @@ extern "C" {
 
 /* USER CODE BEGIN Private defines */
 
+void USART1_DMA_ITHandler(void);
 /* USER CODE END Private defines */
 
 void MX_DMA_Init(void);
